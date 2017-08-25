@@ -4,7 +4,8 @@
 
 export function triggerAsync(selector) {
 	var elem = document.querySelector(selector);
-	var newVal = elem.getAttribute('id').substring(0, elem.getAttribute('id').length - 1) + '=' + elem.value.replace(/ /g, '+');
+	var id = elem.getAttribute('id')
+	var newVal = id.substring(0, id.length - 1) + '=' + elem.value.replace(/ /g, '+');
 	var formData = $('form').first().serialize().replace(elem.nextSibling.getAttribute('name'), newVal + '&' + elem.nextSibling.getAttribute('name'));
 
 	return fetch(document.querySelectorAll('form')[0].getAttribute('action'), {
