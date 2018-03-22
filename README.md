@@ -18,7 +18,7 @@ The motivations for this project were to create a highly re-usable component bas
 
 This solution utilises the React and Redux libraries to render a single page client side application to the end user. The client interacts with the SITS application via multiple hidden inputs and buttons which have been created utilising standard SITS components (TTE, TTQ, TEC, TCR).
 
-An example is provided in the xpc subdirectory ./xpc/sits-example.xpc. Import the contents of this file into SITS and create a container option link to the task 'REACT-PROTO' to see the demo in action. Run compilaed react application locally using the comment 'npm run start'.
+An example is provided in the xpc subdirectory ./xpc/sits-example.xpc. Import the contents of this file into SITS and create a container option link to the task 'REACT-PROTO' to see the demo in action. Run compiled react application locally using the comment 'npm run start'.
 
  The example sets the value of the SLP 'REACT-PROTO' asynchronously - using redux to manage the state of the SLP. This is overkill for a single value but becomes very useful when managing many different values and entities (see [ReactModuleTest](https://github.com/hairmot/REACTModuleTest) for an example).
 
